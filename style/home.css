@@ -1,0 +1,314 @@
+body img#backgroundimage {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  height: 534px;
+  margin: 0px 20.3% 0px 20.3%;
+  top: 0px;
+  transform: scale(1.69);
+}
+body div#backgroundshadow {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0px;
+}
+body div#backgroundshadow div#alertpanel {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 6px;
+  height: 400px;
+  position: relative;
+  display: block;
+  top: calc(50% - calc(400px / 2));
+  margin: 0px auto 0px auto;
+  background-color: #fff;
+  font-family: "OpenSans-regular";
+  overflow-y: scroll;
+}
+body div#backgroundshadow div#alertpanel h1 {
+  font-size: 17pt;
+  width: 100%;
+  margin-top: 6px;
+  top: 8px;
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+}
+body div#backgroundshadow div#alertpanel div#p1 {
+  display: flex;
+}
+body div#backgroundshadow div#alertpanel div#p1 div#image img {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  margin: 10px 10px 0px 10px;
+}
+body div#backgroundshadow div#alertpanel div#p1 div#image h3 {
+  width: 180px;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+  font-weight: 500;
+}
+body div#backgroundshadow div#alertpanel div#p1 p {
+  margin-bottom: 0px;
+  word-break: break-all;
+  padding-right: 20px;
+}
+body div#backgroundshadow div#alertpanel div#p2 {
+  display: flex;
+}
+body div#backgroundshadow div#alertpanel div#p2 p {
+  width: 339px;
+  margin-top: 6px;
+  margin-left: 200px;
+  position: relative;
+  word-break: break-all;
+  padding-right: 20px;
+}
+body div#backgroundshadow div#alertpanel a#btnBack {
+  width: 100%;
+  text-align: center;
+  color: #646464;
+  display: block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 10px 0px 20px 0px;
+}
+body div#msg {
+  height: 500px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 24pt;
+  font-family: "Roboto-bold";
+  padding-top: 50px;
+}
+body div#msg h1.title {
+  position: relative;
+  font-size: 70pt;
+  margin-top: 0px;
+  top: 30px;
+  text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.4);
+}
+body div#msg h3.dilema {
+  position: relative;
+  top: 36px;
+  font-size: 14pt;
+}
+body div#message {
+  border-top: var(--gray-border);
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body div#message img {
+  position: relative;
+  left: 40px;
+  display: block;
+  width: 40%;
+  max-width: 338px;
+}
+body div#message p {
+  width: 30%;
+  right: 6%;
+  font-size: 13pt;
+  font-family: "OpenSans-regular";
+  position: relative;
+  text-align: justify;
+  word-break: keep-all;
+}
+body div#content {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  border-top: var(--gray-border);
+  position: relative;
+  padding: 20px 0px 20px 0px;
+}
+body div#content div#editions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body div#content div#editions div.edition {
+  margin: 4px;
+  width: 250px;
+  height: 340px;
+  background-color: var(--first-color);
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+body div#content div#editions div.edition a {
+  text-decoration: none;
+  color: transparent;
+}
+body div#content div#editions div.edition a div.imageEdition {
+  width: calc(100% - 10px);
+  margin: 5px 5px 5px 5px;
+  height: 97.3%;
+  background-position: 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body div#content div#editions div.edition a div.imageEdition:hover ~ h2.title {
+  display: block;
+}
+body div#content div#editions div.edition a div.imageEdition:hover ~ new {
+  top: -434px;
+}
+body div#content div#editions div.edition a h2.title {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: relative;
+  top: -53px;
+  color: #fff;
+  font-family: "OpenSans-regular";
+  font-size: 20pt;
+  font-weight: 500;
+  text-align: center;
+}
+body div#content div#editions div.edition a h2.title:hover {
+  display: block;
+}
+body div#content div#editions div.edition a h2.title:hover ~ new {
+  top: -434px;
+}
+body div#content div#editions div.edition a new {
+  display: inline-block;
+  position: relative;
+  top: -358px;
+  width: 50px;
+  height: 50px;
+  left: -18px;
+  transform: rotate(-54deg);
+  background-image: url("../resource/New-Icon.png");
+  background-position: 0px;
+  background-size: 100%;
+}
+body div#content a#btnViewAllEditions {
+  width: calc(60% - 300px);
+  display: block;
+  background-color: var(--first-color);
+  margin: 14px auto 0px auto;
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+  font-family: "OpenSans-regular";
+  transition: all 0.3s ease;
+  min-width: 150px;
+  height: 22px;
+  text-decoration: none;
+}
+body div#content a#btnViewAllEditions:hover {
+  background-color: var(--first-color-focused);
+}
+body div#advertisements {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  padding: 16px 0px 16px 0px;
+  border-top: var(--gray-border);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body div#advertisements a {
+  position: relative;
+  width: 60%;
+  height: 160px;
+  max-width: 500px;
+  display: block;
+  margin: 2px;
+}
+body div#advertisements a img {
+  height: 100%;
+  max-width: 100%;
+  margin: 0px auto;
+  position: relative;
+  display: block;
+}
+body footer#footer {
+  height: 400px;
+  background-size: 100% 100%;
+  background-position: 0px 98px;
+}
+
+@media (max-width: 494px) {
+  body div#advertisements a {
+    width: 90%;
+  }
+}
+@media (min-width: 1360px) {
+  body img#backgroundimage {
+    left: calc(calc(100% - 1360px) / 3.5);
+  }
+}
+@media (max-width: 640px) {
+  body div#message img {
+    margin: 6px auto 0px auto;
+    left: 0px;
+  }
+  body div#message p {
+    width: 90%;
+    left: 5%;
+  }
+  body div#content div#editions div.edition a h2.title {
+    display: block;
+  }
+  body div#content div#editions div.edition a new {
+    top: -434px;
+  }
+}
+@media (max-width: 458px) {
+  body div#backgroundshadow div#alertpanel div#p1 {
+    display: block;
+    width: 180px;
+    margin: 10px auto 0px auto;
+  }
+  body div#backgroundshadow div#alertpanel div#p1 p {
+    width: 90%;
+    padding-right: 0px;
+    margin: 10px auto 0px auto;
+    text-align: justify;
+  }
+  body div#backgroundshadow div#alertpanel div#p2 {
+    display: block;
+    width: 180px;
+    margin: 10px auto 0px auto;
+  }
+  body div#backgroundshadow div#alertpanel div#p2 p {
+    width: 90%;
+    padding-right: 0px;
+    text-align: justify;
+    margin: 10px auto 0px auto;
+  }
+  body div#backgroundshadow div#alertpanel a#btnBack {
+    background-color: var(--first-color);
+    width: 90%;
+    margin: 60px auto 10px auto;
+    color: #fff;
+    display: block;
+  }
+  body div#backgroundshadow div#alertpanel a#btnBack:hover {
+    background-color: var(--first-color-focused);
+  }
+}
+@media (max-width: 780px) {
+  body div#advertisements a {
+    width: 90%;
+  }
+}
+@media (max-width: 300px) {
+  body div#initialtext {
+    font-size: 18pt;
+  }
+}

@@ -1,0 +1,251 @@
+body div#msg {
+  height: 500px;
+  background-color: #e6e6e6;
+}
+body div#msg img#backgroundimage {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 0px auto 0px auto;
+  top: 40px;
+  max-width: 400px;
+  width: 100%;
+}
+body div#content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  background-color: #fff;
+  border-top: var(--gray-border);
+  top: 0px;
+  z-index: 2;
+  font-family: "OpenSans-regular";
+}
+body div#content h1#title {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+body div#content div#obs {
+  display: flex;
+  margin: 0px auto 0px auto;
+  width: 322px;
+  font-size: 10pt;
+}
+body div#content div#obs img {
+  height: 26px;
+  margin-top: 14px;
+}
+body div#content div#obs h3 {
+  color: #f01e1e;
+}
+body div#content div.div {
+  background-color: #fff;
+  width: 60%;
+  max-width: 640px;
+  height: 162px;
+  border-radius: 6px;
+  border: var(--gray-border);
+  position: relative;
+  display: block;
+  margin: 20px auto 0px auto;
+}
+body div#content div.div h3 {
+  margin-left: 12px;
+  font-size: 13pt;
+}
+body div#content div.div textarea, body div#content div.div input.txb {
+  width: 90%;
+  border: 0px;
+  font-size: 12pt;
+  margin-left: 5%;
+  outline: none;
+  border-bottom: var(--gray-border);
+  font-family: "OpenSans-regular";
+}
+body div#content div.div input.rb {
+  outline: none;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+body div#content div.div input.rb::after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d7d7d7;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+body div#content div.div input.rb:checked::after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: var(--first-color);
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+body div#content div.div h4 {
+  display: none;
+  padding-left: 34px;
+  margin-left: 4px;
+  font-weight: 500;
+  background-image: url("../resource/Alert-icon.png");
+  background-position: 0px;
+  background-size: 26px;
+  background-repeat: no-repeat;
+}
+body div#content div#msg {
+  height: auto;
+}
+body div#content div#msg textarea {
+  border: var(--gray-border);
+  border-radius: 6px;
+  max-width: 90%;
+  min-width: 90%;
+  widows: 90%;
+  height: 40px;
+  display: block;
+  margin: 20px auto 0px auto !important;
+}
+body div#content div#msg h4 {
+  display: block;
+  opacity: 0;
+}
+body div#content input#btnSend {
+  width: 70%;
+  outline: none;
+  display: block;
+  position: relative;
+  background-color: var(--first-color);
+  max-width: 630px;
+  margin: 20px auto 0px auto;
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: "OpenSans-regular";
+  font-size: 12pt;
+}
+body div#content input#btnSend:hover {
+  background-color: var(--first-color-focused);
+}
+body div#team {
+  z-index: 2;
+  background-color: var(--first-color);
+  font-family: "OpenSans-regular";
+}
+body div#team h1 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 22pt;
+  margin: 0px;
+  top: 8px;
+  position: relative;
+  margin-bottom: 10px;
+}
+body div#team section#persons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+body div#team section#persons div.person {
+  width: 220px;
+  height: 230px;
+  margin: 26px 4px 4px 4px;
+}
+body div#team section#persons div.person div.image {
+  height: 170px;
+}
+body div#team section#persons div.person div.image crow {
+  display: inline-block;
+  position: relative;
+  top: -180px;
+  width: 50px;
+  height: 50px;
+  left: -20px;
+  transform: rotate(-54deg);
+  background-image: url("../resource/Crown-Icon.png");
+  background-position: 0px;
+  background-size: 100%;
+}
+body div#team section#persons div.person div.image img {
+  width: 200px;
+  height: 150px;
+  border: 2px dashed #fff;
+  margin: 10px 8px 0px 8px;
+  background-position: 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+body div#team section#persons div.person div.image img:hover ~ h2 {
+  display: block;
+}
+body div#team section#persons div.person div.image img:hover ~ crow {
+  top: -213px;
+}
+body div#team section#persons div.person div.image h2 {
+  color: #fff;
+  display: none;
+  width: 200px;
+  margin: 0px 6px 0px 10px;
+  top: -40px;
+  text-align: center;
+  font-size: 15pt;
+  position: relative;
+  padding: 2px 0px 4px 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+body div#team section#persons div.person div.image h2:hover {
+  display: block;
+}
+body div#team section#persons div.person div.image h2:hover ~ crow {
+  top: -213px;
+}
+body div#team section#persons div.person h3 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin: 2px 0px 0px 0px;
+  font-size: 12pt;
+  word-break: break-word;
+}
+body div#team section#persons div.person h3.email {
+  font-size: 10.4pt;
+}
+body div#team img#backgroundimage {
+  height: 220px;
+  opacity: 90%;
+  position: relative;
+  display: block;
+}
+
+@media (max-width: 324px) {
+  body div#content div#obs {
+    width: 200px;
+  }
+}
+@media (max-width: 640px) {
+  body div#team section#persons div.person div.image h2 {
+    display: block;
+  }
+  body div#team section#persons div.person div.image crow {
+    top: -213px;
+  }
+}

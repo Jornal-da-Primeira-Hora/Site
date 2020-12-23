@@ -1,0 +1,151 @@
+body section#content {
+  font-family: "OpenSans-regular";
+  width: 80%;
+  margin: 60px auto 40px auto;
+  display: block;
+  position: relative;
+  padding: 20px;
+}
+body section#content h1 {
+  color: var(--first-color);
+  width: 100%;
+  text-align: center;
+}
+body section#content div {
+  width: 60%;
+  border: var(--gray-border);
+  border-radius: 6px;
+  margin: 20px auto 0px auto;
+  max-width: 640px;
+  height: 162px;
+  padding: 8px;
+}
+body section#content div h4 {
+  display: none;
+}
+body section#content div .txb, body section#content div .txa {
+  width: 90%;
+  border: 0px;
+  font-size: 12pt;
+  margin-left: 5%;
+  outline: none;
+  border-bottom: var(--gray-border);
+  text-align: center;
+  margin-top: 20px;
+}
+body section#content div h2 {
+  font-size: 15pt;
+  margin: 0px;
+}
+body section#content div .preview {
+  text-align: center;
+}
+body section#content div p#imgLocation {
+  width: 100%;
+  text-align: center;
+}
+body section#content div label {
+  width: 200px;
+  margin: 0px auto 0px auto;
+  display: block;
+  text-align: center;
+  background-color: var(--first-color);
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+body section#content div label:hover {
+  background-color: var(--first-color-focused);
+}
+body section#content .p-div {
+  height: auto;
+}
+body section#content .p-div .txa {
+  border: var(--gray-border);
+  width: 90%;
+  max-width: 90%;
+  min-width: 90%;
+  margin: 20px auto 20px auto;
+  display: block;
+  position: relative;
+}
+body section#content .normal-h1 .preview, body section#content .normal-h2 .preview {
+  font-weight: 400;
+}
+body section#content h2.preview {
+  color: var(--first-color);
+}
+body section#content header {
+  width: 80%;
+  margin: 20px auto 0px auto;
+  border: var(--gray-border);
+  border-radius: 6px;
+  height: auto;
+}
+body section#content header input.txbPass {
+  width: 90%;
+  border: 0px;
+  font-size: 12pt;
+  display: block;
+  margin: 20px auto 0px auto;
+  outline: none;
+  border-bottom: var(--gray-border);
+  text-align: center;
+}
+body section#content header h2, body section#content header h4 {
+  margin: 0px;
+  height: 36px;
+}
+body section#content header h4 {
+  display: block;
+  padding-left: 34px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 370px;
+  background-image: url("../resource/Alert-icon.png");
+  background-position: 0px;
+  background-size: 26px;
+  background-repeat: no-repeat;
+  height: 22px;
+  opacity: 0;
+  margin: 6px auto 0px auto;
+}
+body section#content header h2 {
+  width: 100%;
+  text-align: center;
+}
+body section#content header a#btnAddNewElement {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  right: 10px;
+}
+body section#content header a#btnAddNewContentInPage {
+  display: block;
+  width: 400px;
+  position: relative;
+  text-align: center;
+  margin: 4px auto 4px auto;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--first-color);
+  transition: all 0.3s ease-in;
+}
+body section#content header a#btnAddNewContentInPage:hover {
+  background-color: var(--first-color-focused);
+}
+body section#content header select#cboContentType {
+  height: 24px;
+  width: 200px;
+  left: 10px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  outline: none;
+  border: var(--gray-border);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}

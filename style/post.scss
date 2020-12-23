@@ -1,0 +1,180 @@
+
+body {
+    section#content {
+        font-family: 'OpenSans-regular';
+        width: 80%;
+        margin: 60px auto 40px auto;
+        display: block;
+        position: relative;
+        padding: 20px;
+
+        h1 {
+            color: var(--first-color);
+            width: 100%;
+            text-align: center;
+        }
+
+        div {
+            width: 60%;
+            border: var(--gray-border);
+            border-radius: 6px;
+            margin: 20px auto 0px auto;
+            max-width: 640px;
+            height: 162px;
+            padding: 8px;
+            
+            h4 {
+                display: none;
+            }
+    
+            .txb, .txa {
+                width: 90%;
+                border: 0px;
+                font-size: 12pt;
+                margin-left: 5%;
+                outline: none;
+                border-bottom: var(--gray-border);
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            h2 {
+                font-size: 15pt;
+                margin: 0px;
+            }
+
+            .preview {
+                text-align: center;
+            }
+
+            p#imgLocation {
+                width: 100%;
+                text-align: center;
+            }
+
+            label {
+                width: 200px;
+                margin: 0px auto 0px auto;
+                display: block;
+                text-align: center;
+                background-color: var(--first-color);
+                color: #fff;
+                transition: all .3s ease-in;
+                
+                &:hover {
+                    background-color: var(--first-color-focused);
+                }
+            }
+        }
+
+        .p-div {
+            height: auto;
+
+            .txa {
+                border: var(--gray-border);
+                width: 90%;
+                max-width: 90%;
+                min-width: 90%;
+                margin: 20px auto 20px auto;
+                display: block;
+                position: relative;
+            }
+        }
+
+        .normal-h1 .preview, .normal-h2 .preview {
+            font-weight: 400;
+        }
+
+        h2.preview {
+            color: var(--first-color);
+        }
+
+        header {
+            width: 80%;
+            margin: 20px auto 0px auto;
+            border: var(--gray-border);
+            border-radius: 6px;
+            height: auto;
+
+            input.txbPass {
+                width: 90%;
+                border: 0px;
+                font-size: 12pt;
+                display: block;
+                margin: 20px auto 0px auto;
+                outline: none;
+                border-bottom: var(--gray-border);
+                text-align: center;
+            }
+
+            h2, h4 {
+                margin: 0px;
+                height: 36px;
+            }
+
+            h4 {
+                display: block;
+                padding-left: 34px;
+                font-size: 16px;
+                font-weight: 500;
+                width: 370px;
+                background: {
+                    image: url('../resource/Alert-icon.png');
+                    position: 0px;
+                    size: 26px;
+                    repeat: no-repeat;
+                }
+                height: 22px;
+                opacity: 0;
+                margin: 6px auto 0px auto;
+            }
+
+            h2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            a#btnAddNewElement {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+                float: right;
+                right: 10px;
+            }
+
+            a#btnAddNewContentInPage {
+                display: block;
+                width:400px;
+                position: relative;
+                text-align: center;
+                margin: 4px auto 4px auto;
+                text-decoration: none;
+                color: #fff;
+                background-color: var(--first-color);
+                transition: all .3s ease-in;
+                
+                &:hover {
+                    background-color: var(--first-color-focused);
+                }
+            }
+
+            select#cboContentType {
+                height: 24px;
+                width: 200px;
+                left: 10px;
+                display: inline-block;
+                position: relative;
+                top: 3px;
+                outline: none;
+                border: var(--gray-border);
+                border-radius: 2px;
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Oswald-regular";
+  src: url("../font/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans-regular";
+  src: url("../font/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../font/Roboto-Bold.ttf");
+}
+
+
+:root {
+  --first-color: rgb(0, 168, 255);
+  --first-color-focused: rgb(0, 140, 230);
+  --gray-border: 1px solid #d7d7d7;
+}
+
+::selection {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+}
+
+::-moz-selection {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+
+body {
+  margin: 0px;
+  background-color: #fff;
+  overflow-y: scroll;
+  scrollbar-color: var(--first-color) transparent;
+  scrollbar-width: 7px;
+  padding-top: 63px;
+}

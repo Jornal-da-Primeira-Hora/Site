@@ -1,0 +1,29 @@
+body div#msg {
+  height: 500px;
+  background-color: #e6e6e6;
+}
+body div#msg img#backgroundimage {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 0px auto 0px auto;
+  max-width: 320px;
+  width: 90%;
+  top: 63px;
+}
+body div#msg div#table {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  height: 123px;
+  top: -13px;
+  margin: 0px;
+  background-color: #9bd7d5;
+}
+body div#content {
+  height: auto;
+  border-top: var(--gray-border);
+  z-index: 2;
+  padding: 50px 0px 50px 0px;
+}

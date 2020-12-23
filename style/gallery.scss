@@ -1,0 +1,181 @@
+
+body {
+
+    div#msg {
+        height: 500px;
+        background-color: rgb(230, 230, 230);
+
+        img#backgroundimage {
+            display: block;
+            position: relative;
+            z-index: 1;
+            margin: 0px auto 0px auto;
+            top: 46px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        div#message {
+            display: block;
+            position: relative;
+            width: 30%;
+            height: auto;
+            border: 2px dashed #d7d7d7;
+            border-radius: 6px;
+            top: 60px;
+            text-align: center;
+            float: right;
+            right: 80px;
+            
+            p {
+                font-family: 'OpenSans-regular';
+                font-size: 15pt;
+                width: 300px;
+                margin: 40px auto 40px auto;
+            }
+        }
+
+        div#table {
+            position: relative;
+            width: 100%;
+            z-index: 0;
+            height: 214px;
+            margin: 0px;
+            background-color: rgb(173, 223, 234);
+        }
+    }
+
+    div#content {
+        height: auto;
+        width: 100%;
+        border-top: var(--gray-border);
+        z-index: 2;
+        position: relative;
+        padding: 50px 0px 50px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div.image {
+            background-color: var(--first-color);
+            min-width: 36%;
+            max-width: 300px;
+            width: auto;
+            margin: 4px 10px 4px 10px;
+            transition: all .3s ease;
+            display: flex;
+            padding: 2px;
+            color: #fff;
+            overflow-y: scroll;
+            height: 160px;
+            font-family: 'OpenSans-regular';
+            
+            img.img {
+                height: 160px;
+                border-radius: 4px;
+            }
+            
+            h2.title {
+                margin: 4px 0px 0px 12px;
+                font-size: 18pt;
+                font-weight: 500;
+                height: 30px;
+                width: 100%;
+            }
+            
+            p.desc {
+                width: 100%;
+                text-align: justify;
+                word-break: keep-all;
+                margin: 0px;
+                height: auto;
+            }
+
+            &:hover {
+                background-color: var(--first-color-focused);
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 1192px) {
+    body div#msg {
+        div#message {
+            width: 90%;
+            left: calc(40% - calc(90% / 2));
+            height: auto;
+            padding: 10px 0px 10px 0px;
+            top: 20px;
+
+            p {
+                margin: 0px;
+                width: 100%;
+            }
+        }
+
+        div#table {
+            top: 0px;
+            height: 164px;
+        }
+    }
+
+    body div#content {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 954px) {
+    body div#msg div#table {
+        height: 136px;
+    }
+}
+
+@media (max-width: 501px) {
+    body div#msg div#table {
+        height: 109px;
+    }
+}
+
+@media (max-width: 502px) {
+    body div#msg {
+
+        h1#table {
+            height: 109px;
+        }
+    }
+}
+
+@media (max-width: 412px) {
+    body div#content div.image {
+        min-width: 160px;
+        display: block;
+        min-height: 322px;
+
+        img.img {
+            margin: 0px auto 0px auto;
+            position: relative;
+            display: block;
+        }
+
+        h2.title {
+            text-align: center;
+            margin: 0px;
+        }
+
+        p.desc {
+            left: 0px;
+            width: 200px;
+            margin: 0px auto 0px auto;
+            top: 6px;
+            padding: 4px;
+        }
+    }
+}
+
+@media (max-width: 508px) {
+    body div#content {
+        padding-top: 120px;
+    }
+}
